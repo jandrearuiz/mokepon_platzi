@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fredoka', sans-serif;
+    background: #937DC2;
+}
+
+.title {
+    font-size: 80px;
+    color: #790252;
+    margin-bottom: 0;
+
+}
+.titleSeleccion {
+    text-align: center;
+    color: #FFABE1;
+    font-size: 40px;
+}
+
+.contentMascota {
+    width: 100%;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.labelMascota {
+    font-size: 30px;
+    color: #FFE6F7;
+    width: 80%;
+}
+
+.inputMascota {
+    margin-left: 50px;
+    width: 25px;
+    height: 25px;
+}
+
+.botonMascota  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.button {
+    background: #AF0171;
+    border: 1px solid #AF0171;
+    border-radius: 25px;
+    padding: 10px 60px;
+    color: #FFE6F7;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+}
+
+.labelAtaque {
+    font-size: 30px;
+    color: #FFE6F7;
+    width: 100%;
+}
+
+.buttonAtaq {
+    background: #AF0171;
+    border: 1px solid #AF0171;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: #FFE6F7;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.botonAtaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    display: flex;
+    justify-content: space-around;
+}
+
+.resultadoMarcador {
+    display: flex;
+    flex-direction: column;
+    background: #319DA0;
+    color: #FFE6F7;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #FFE6F7;
+    border-radius: 6px;
+    width: 35%;
+    justify-content: space-around;
+}
