@@ -126,24 +126,36 @@ function revisarVidas() {
 };
 
 function crearMensaje(resultado) {
-    let sectionMensajes = document.getElementById('mensajes');
-    let parrafo = document.createElement('p');
+    let resultadoPartida = document.getElementById('resultado-partida');
+    let ataqueDelJugador = document.getElementById('ataque-del-jugador');
+    let ataqueDelEnemigo = document.getElementById('ataque-del-enemigo');
 
-    parrafo.innerHTML = "Tu mascota atacó con " + ataqueJugador + ", la mascota del enemigo atacó con " + ataqueEnemigo + ". " + resultado + "."
-    sectionMensajes.appendChild(parrafo);
+    resultadoPartida.innerHTML = resultado;
+    let nuevoAtaqueJugador = document.createElement('p');
+    let nuevoAtaqueEnemigo = document.createElement('p');
+
+    nuevoAtaqueJugador.innerHTML = ataqueJugador;
+    nuevoAtaqueEnemigo.innerHTML = ataqueEnemigo;
+
+    ataqueDelJugador.appendChild(nuevoAtaqueJugador);
+    ataqueDelEnemigo.appendChild(nuevoAtaqueEnemigo);
+
+    // let sectionMensajes = document.getElementById('mensajes');
+    // let parrafo = document.createElement('p');
+    // parrafo.innerHTML = "Tu mascota atacó con " + ataqueJugador + ", la mascota del enemigo atacó con " + ataqueEnemigo + ". " + resultado + "."
+    // sectionMensajes.appendChild(parrafo);
 };
 
 function crearMensajeFinal(resultadoFinal) {
-    let sectionMensajes = document.getElementById('mensajes');
-    let parrafo = document.createElement('p');
+    let resultadoPartida = document.getElementById('resultado-partida');
+    // let parrafo = document.createElement('p');
     let botonAtaqueFuego = document.getElementById('boton-fuego');
     let botonAtaqueAgua = document.getElementById('boton-agua');
     let botonAtaqueTierra = document.getElementById('boton-tierra');
     let sectionSeleccionarReiniciar = document.getElementById('reiniciar');
 
-    
-    parrafo.innerHTML = resultadoFinal;
-    sectionMensajes.appendChild(parrafo);
+    resultadoPartida.innerHTML = resultadoFinal;
+    // sectionSeleccionarReiniciar.appendChild(parrafo);
     
     botonAtaqueFuego.disabled = true;
     botonAtaqueAgua.disabled = true;

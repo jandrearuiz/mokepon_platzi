@@ -13,6 +13,7 @@ body {
     margin-bottom: 0;
 
 }
+
 .titleSeleccion {
     text-align: center;
     color: #FFABE1;
@@ -38,7 +39,7 @@ body {
     height: 25px;
 }
 
-.botonMascota  {
+.botonMascota {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,11 +49,12 @@ body {
 .button {
     background: #AF0171;
     border: 1px solid #AF0171;
-    border-radius: 25px;
+    border-radius: 6px;
     padding: 10px 60px;
     color: #FFE6F7;
     font-family: 'Fredoka', sans-serif;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 .labelAtaque {
@@ -96,3 +98,28 @@ body {
     width: 35%;
     justify-content: space-around;
 }
+
+.mensajeResultado {
+    margin: 0;
+    background: #FFABE1;
+    padding: 10px;
+    border-radius: 6px;
+    width: 200px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorMensajes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+}
+
