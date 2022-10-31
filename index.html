@@ -27,17 +27,17 @@
     <section id="ver-mapa">
         <h1 class="titleMap">Recorre el mapa con tu mokepon</h1>
         <canvas id="mapa"></canvas>
-       <div class="btnMovimiento">
         <button class="buttonMov" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
-        <button class="buttonMov" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+        <div class="btnMovimiento">
+            <button class="buttonMov" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+            <button class="buttonMov" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+        </div>
         <button class="buttonMov" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
-        <button class="buttonMov" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
-       </div>
     </section>
 
     <section id="seleccionar-ataque">
         <h2 class="titleSeleccion">Elige tu ataque:</h2>
-        <p id ="contenedor-ataques" class="botonAtaque"></p>
+        <p id="contenedor-ataques" class="botonAtaque"></p>
 
         <div class="result">
             <div class="resultadoMarcador">
